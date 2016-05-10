@@ -1,0 +1,96 @@
+body {
+  background: #eee;
+  padding: 50px 15px; }
+
+.page-container {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.form-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 1%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+
+.ajax-subscription {
+  position: relative;
+  display: table;
+  width: 100%; }
+  .ajax-subscription .ajax-btn-wrapper,
+  .ajax-subscription input[type='email'] {
+    box-sizing: border-box;
+    height: 50px;
+    display: table-cell; }
+  .ajax-subscription button,
+  .ajax-subscription input[type='email'] {
+    border-radius: 3px; }
+  .ajax-subscription button {
+    height: 50px;
+    margin-left: 10px;
+    float: right;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    background-color: #00a8ff;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    width: 130px; }
+    .ajax-subscription button i {
+      margin-left: 10px; }
+    .ajax-subscription button i.fa-circle {
+      font-size: 8px;
+      margin: 0 2px;
+      -webkit-transition: all .7s;
+      transition: all .7s; }
+      .ajax-subscription button i.fa-circle.animate {
+        -webkit-animation: fade 1.6s infinite;
+        /* Chrome, Safari, Opera */
+        animation: fade 1.6s infinite; }
+    .ajax-subscription button:hover {
+      background-color: #66cbff; }
+    .ajax-subscription button:focus {
+      outline: none; }
+    .ajax-subscription button.ajax-btn-process {
+      width: 75px; }
+    .ajax-subscription button.ajax-btn-success {
+      text-align: center;
+      background: #4caf50;
+      border-radius: 50%;
+      width: 50px; }
+      .ajax-subscription button.ajax-btn-success i {
+        font-size: 20px;
+        margin: 0; }
+  .ajax-subscription .ajax-btn-wrapper {
+    white-space: nowrap;
+    width: 1%; }
+  .ajax-subscription input[type='email'] {
+    float: left;
+    width: 100%;
+    float: left;
+    height: 50px;
+    padding: 5px 10px 5px;
+    border: 2px solid #00a8ff; }
+    .ajax-subscription input[type='email']:focus {
+      outline: none;
+      border-color: #66cbff; }
+  .ajax-subscription.ajax-success input[type='email'] {
+    border-color: #4caf50; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Standard syntax */
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

@@ -1,0 +1,130 @@
+
+$primary-color  : #00a8ff;
+$success-color  : #4caf50;
+$danger-color   : #e84653;
+
+body{
+  background: #eee;
+  padding: 50px 15px;
+}
+.page-container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-box{
+  background: #fff;
+  padding: 15px;
+  border-radius:1%;
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+.ajax-subscription{
+  position: relative;
+  display: table;
+  width: 100%;
+
+
+
+  .ajax-btn-wrapper,
+  input[type='email'] {
+    box-sizing: border-box;
+    height: 50px;
+    display: table-cell;
+  }
+
+
+  button,
+  input[type='email'] {
+    border-radius: 3px;
+  }
+
+  button{
+    height: 50px;
+    margin-left: 10px;
+    float: right;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    background-color: $primary-color;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    width: 130px;
+
+    i{
+      margin-left: 10px;
+    }
+
+    i.fa-circle{
+      font-size: 8px;
+      margin: 0 2px;
+      -webkit-transition: all .7s;
+      transition: all .7s;
+
+
+      &.animate{
+        -webkit-animation: fade 1.6s infinite; /* Chrome, Safari, Opera */
+        animation: fade 1.6s infinite;
+      }
+    }
+    &:hover{
+      background-color:lighten($primary-color, 20%);
+    }
+    &:focus{
+      outline: none;
+    }
+    &.ajax-btn-process{
+      width: 75px;
+    }
+    &.ajax-btn-success{
+      text-align: center;
+      background: $success-color;
+      border-radius: 50%;
+      width: 50px;
+      i{
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+  }
+
+  .ajax-btn-wrapper{
+    white-space: nowrap;
+    width: 1%;
+  }
+  input[type='email']{
+    float: left;
+    width: 100%;
+    float: left;
+    height: 50px;
+    padding: 5px 10px 5px;
+    border: 2px solid $primary-color;
+
+    &:focus{
+      outline: none;
+      border-color: lighten($primary-color, 20%);
+    }
+  }
+  &.ajax-success input[type='email']{
+    border-color: $success-color;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade {
+  0%   {opacity: 1}
+
+  50%   {opacity: 0}
+
+  100% {opacity: 1}
+}
+
+/* Standard syntax */
+@keyframes fade {
+  0%   {opacity: 1}
+
+  50%   {opacity: 0}
+
+  100% {opacity: 1}
+}
